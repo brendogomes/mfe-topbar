@@ -1,0 +1,11 @@
+:host {
+    .custom-toolbar {
+        background-color: white;
+
+        div {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
