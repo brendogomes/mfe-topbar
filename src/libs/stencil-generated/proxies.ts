@@ -8,16 +8,16 @@ import { Components } from '@web-components/dist/components';
 
 
 @ProxyCmp({
-  inputs: ['first', 'last', 'middle']
+  inputs: ['color', 'size', 'type']
 })
 @Component({
-  selector: 'my-component',
+  selector: 'web-button',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: '<ng-content></ng-content>',
   // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-  inputs: ['first', 'last', 'middle'],
+  inputs: ['color', 'size', 'type'],
 })
-export class MyComponent {
+export class WebButton {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -26,6 +26,6 @@ export class MyComponent {
 }
 
 
-export declare interface MyComponent extends Components.MyComponent {}
+export declare interface WebButton extends Components.WebButton {}
 
 
